@@ -1,3 +1,15 @@
+/*business logic*/
+var Player = {
+  result: function(number) {
+    this.number = number;
+  },
+  score: function(points) {
+    this.score += points;
+  },
+  score: 0
+};
+
+/*user logic*/
 function rolluser1(){
   var user1=document.getElementById("user1");
   var dice1=Math.floor((Math.random() * 6) + 1);
